@@ -39,7 +39,7 @@ main{
 .section__images{
     /* background-color: blue; */
     overflow: hidden;
-    height: 279px;
+    height: 250px;
     position: relative;
     margin-top: 25px;
 }
@@ -49,12 +49,34 @@ main{
 .section__images img:first-child{
     position: absolute;
     left: -50%; 
+    width: 90%;
 }
 .section__images img:last-child{
     position: absolute;
     right: -50%;
     bottom: 0;
+    width: 85%;
+
 }
+
+footer {
+    margin-top: -20px;
+    height: 180px; /* Altura fija del footer */
+    display: flex;
+    justify-content: center;
+    align-items: flex-end; /* Asegura que la imagen se alinee desde abajo */
+}
+
+footer img {
+    margin-left: 40px;
+    width: 130%; /* Ancho fijo del footer */
+    height: 110%; /* Asegura que la imagen ocupe todo el footer */
+    object-fit: cover; /* Recorta la imagen sin deformarla */
+    object-position: top center; /* Enfoca el recorte desde la parte superior */
+    transform: scale(1.6); /* Escala la imagen */
+}
+
+
 .section__form{
     /* background-color: bisque; */
     margin-top: 27px;
@@ -66,13 +88,13 @@ main{
     margin: auto;
     display: block;
     background-color: var(--color-3);
-    width: 284px;
+    width: 250px;
     height: 59px;
     border-radius: 20px;
     text-align: center;
     padding-top: 17px;
     font-family: "Inter_18pt-Bold";
-    font-size: 20px;
+    font-size: 17px;
     color: var(--color-1);
     text-decoration: none;
 }
@@ -84,7 +106,7 @@ main{
     margin-top: 8px;
     text-align: center;
     font-family: "Inter_18pt-Bold";
-    font-size: 15px;
+    font-size: 13px;
 }
 .section__form p a{
     color: var(--color-3);
