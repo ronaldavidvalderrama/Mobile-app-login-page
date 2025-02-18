@@ -39,7 +39,7 @@ main{
 .section__images{
     /* background-color: blue; */
     overflow: hidden;
-    height: 250px;
+    height: 320px;
     position: relative;
     margin-top: 25px;
 }
@@ -60,20 +60,21 @@ main{
 }
 
 footer {
-    margin-top: -20px;
-    height: 180px; /* Altura fija del footer */
+    margin-top: 20px;
+    width: 100%; /* Ancho fijo del footer */
+    bottom: 100%; /* Altura fija del footer */
     display: flex;
-    justify-content: center;
-    align-items: flex-end; /* Asegura que la imagen se alinee desde abajo */
+    overflow: hidden;
+
 }
 
 footer img {
-    margin-left: 40px;
-    width: 130%; /* Ancho fijo del footer */
-    height: 110%; /* Asegura que la imagen ocupe todo el footer */
+    margin-left: 60px; /* Ajusta este valor para mover la imagen más a la izquierda */
+    width: 80%; /* Ancho fijo del footer */
+    height: 150%; /* Asegura que la imagen ocupe todo el footer */
     object-fit: cover; /* Recorta la imagen sin deformarla */
     object-position: top center; /* Enfoca el recorte desde la parte superior */
-    transform: scale(1.6); /* Escala la imagen */
+    transform: scale(1.8); /* Escala la imagen */
 }
 
 
@@ -81,6 +82,7 @@ footer img {
     /* background-color: bisque; */
     margin-top: 27px;
     position: relative;
+    
 }
 .section__form > a{
     position: relative;
